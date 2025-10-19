@@ -71,7 +71,7 @@ button {
   font-style: normal;
 }
 
-.site-address {
+.contact {
   font-size: 16px;
   color: #434455;
   transition: color 250ms ease;
@@ -79,8 +79,8 @@ button {
   letter-spacing: 0.02em;
 }
 
-.site-address:hover,
-.site-address:focus {
+.contact:hover ,.contact:hover,
+.contact:focus, .contact:focus {
   color: #404bbf;
 }
 
