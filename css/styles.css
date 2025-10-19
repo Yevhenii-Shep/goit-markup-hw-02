@@ -40,6 +40,11 @@ button {
   color: #4d5ae5;
   line-height: 1.17;
 }
+.logo:hover,
+.logo:focus {
+  color: #404bbf;
+
+}
 
 .logo-accent {
   color: #2e2f42;
@@ -80,6 +85,10 @@ button {
   background-color: #2e2f42;
   text-align: center;
 }
+.hero-section:hover,
+.hero-section:focus{
+  color: #404bbf;
+}
 
 .hero-title {
   color: #ffffff;
@@ -115,7 +124,7 @@ button {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-  line-height: 1.07;
+  line-height: 1.11;
 }
 
 .feature-title {
@@ -124,7 +133,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  line-height: 1.11;
+  line-height: 1.2;
 }
 
 .feature-text {
