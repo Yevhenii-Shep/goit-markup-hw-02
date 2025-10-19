@@ -1,9 +1,17 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body.page {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
   font-size: 16px;
-  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 h1,
@@ -16,6 +24,7 @@ p {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -25,10 +34,40 @@ a {
 
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
 .site-header {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .logo {
@@ -40,16 +79,15 @@ button {
   color: #4d5ae5;
   line-height: 1.17;
 }
+
 .logo:hover,
 .logo:focus {
   color: #404bbf;
-
 }
 
 .logo-accent {
   color: #2e2f42;
 }
-
 
 .nav-link {
   color: #2e2f42;
@@ -58,6 +96,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
+  padding: 24px 0;
+  display: inline-block;
 }
 
 .nav-link:hover,
@@ -69,7 +109,13 @@ button {
   font-style: normal;
 }
 
-.contact {
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contact,
+.contact-phone {
   font-size: 16px;
   color: #434455;
   transition: color 250ms ease;
@@ -77,18 +123,18 @@ button {
   letter-spacing: 0.02em;
 }
 
-.contact:hover ,.contact:hover,
-.contact:focus, .contact:focus {
+.contact:hover,
+.contact:focus,
+.contact-phone:hover,
+.contact-phone:focus {
   color: #404bbf;
 }
 
+/* Hero Section */
 .hero-section {
   background-color: #2e2f42;
+  padding: 188px 0;
   text-align: center;
-}
-.hero-section:hover,
-.hero-section:focus{
-  color: #404bbf;
 }
 
 .hero-title {
@@ -98,6 +144,9 @@ button {
   margin-bottom: 48px;
   text-align: center;
   line-height: 1.07;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -108,14 +157,32 @@ button {
   font-size: 16px;
   letter-spacing: 0.04em;
   border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
   cursor: pointer;
   transition: background-color 250ms ease;
   line-height: 1.5;
+  display: inline-block;
+  min-width: 169px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+/* Features Section */
+.features-section {
+  padding: 120px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-list li {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .section-title {
@@ -144,42 +211,79 @@ button {
   line-height: 1.5;
 }
 
+/* Team Section */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-member {
   background-color: #ffffff;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-member img {
+  width: 100%;
+}
+
+.team-member h3,
+.team-member p {
+  padding: 32px 0 8px;
+}
+
+.team-member p {
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 120px 0;
 }
 
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
-}
-.portfolio-title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+  gap: 48px 24px;
 }
 
-.portfolioo-title {
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin: 32px 0 8px 16px;
 }
-.portfolioo-text {
+
+.portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin: 0 0 32px 16px;
 }
+
+/* Footer */
 .site-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo-accent {
@@ -191,4 +295,6 @@ button {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  margin-top: 16px;
+  max-width: 264px;
 }
