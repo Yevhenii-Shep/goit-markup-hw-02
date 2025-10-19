@@ -49,10 +49,8 @@ button {
 .logo-accent {
   color: #2e2f42;
 }
-.nav-list:hover,
-.nav-list:focus{
-  color:#404bbf
-}
+
+
 .nav-link {
   color: #2e2f42;
   font-weight: 500;
