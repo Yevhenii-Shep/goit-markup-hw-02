@@ -6,16 +6,14 @@ body.page {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -27,8 +25,34 @@ button {
   font-family: inherit;
 }
 
+/* ==== Container ==== */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ==== Header ==== */
 .site-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .logo {
@@ -40,16 +64,15 @@ button {
   color: #4d5ae5;
   line-height: 1.17;
 }
+
 .logo:hover,
 .logo:focus {
   color: #404bbf;
-
 }
 
 .logo-accent {
   color: #2e2f42;
 }
-
 
 .nav-link {
   color: #2e2f42;
@@ -69,7 +92,8 @@ button {
   font-style: normal;
 }
 
-.contact {
+.contact,
+.contact-phone {
   font-size: 16px;
   color: #434455;
   transition: color 250ms ease;
@@ -77,18 +101,18 @@ button {
   letter-spacing: 0.02em;
 }
 
-.contact:hover ,.contact:hover,
-.contact:focus, .contact:focus {
+.contact:hover,
+.contact:focus,
+.contact-phone:hover,
+.contact-phone:focus {
   color: #404bbf;
 }
 
+/* ==== Hero ==== */
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
-}
-.hero-section:hover,
-.hero-section:focus{
-  color: #404bbf;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -111,11 +135,18 @@ button {
   cursor: pointer;
   transition: background-color 250ms ease;
   line-height: 1.5;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+/* ==== Features ==== */
+.features-section {
+  padding: 120px 0;
 }
 
 .section-title {
@@ -126,6 +157,11 @@ button {
   text-transform: capitalize;
   margin-bottom: 72px;
   line-height: 1.11;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .feature-title {
@@ -144,25 +180,33 @@ button {
   line-height: 1.5;
 }
 
+/* ==== Team ==== */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-member {
   background-color: #ffffff;
   text-align: center;
+  border-radius: 4px;
+  padding-bottom: 32px;
+}
+
+/* ==== Portfolio ==== */
+.portfolio-section {
+  padding: 120px 0;
 }
 
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
-}
-.portfolio-title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+  gap: 24px;
 }
 
 .portfolioo-title {
@@ -172,14 +216,18 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .portfolioo-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* ==== Footer ==== */
 .site-footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo-accent {
@@ -191,4 +239,6 @@ button {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  max-width: 264px;
+  margin-top: 16px;
 }
