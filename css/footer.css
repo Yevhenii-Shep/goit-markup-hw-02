@@ -10,6 +10,11 @@
   color: #4d5ae5;
 }
 
+.site-footer .logo:hover .footer-logo-accent,
+.site-footer .logo:focus .footer-logo-accent {
+  color: #404bbf;
+}
+
 .footer-text {
   line-height: 1.5;
   color: #f4f4fd;

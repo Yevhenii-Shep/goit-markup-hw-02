@@ -34,19 +34,19 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
 }
 
-.logo:hover,
-.logo:focus {
-  color: #404bbf;
-}
-
 .logo-accent {
   color: #4d5ae5;
+}
+
+.logo:hover .logo-accent,
+.logo:focus .logo-accent {
+  color: #404bbf;
 }
 
 .section-title {
